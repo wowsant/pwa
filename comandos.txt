@@ -1,0 +1,6 @@
+Para esse curso você está livre para usar o servidor de arquivos de sua preferência. Se você já configurou um servidor e já tem o projeto rodando, você não precisa seguir esse tutorial.
+
+1º passo - Instale o node, disponível em https://nodejs.org/en
+2º passo - Pelo terminal ou prompt de comando acesse a pasta onde você descompactou o .zip
+3º passo - execute o seguinte comando para instalar o servidor: npm install -g http-server
+4º passo - após a instalação, execute o comando http-server para rodar o servidor. É importante que o comando seja rodado na pasta raíz do projeto, dentro do Terminal ou prompt de comando.
