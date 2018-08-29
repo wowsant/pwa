@@ -8,9 +8,8 @@ let filesToCache = [
 	'app/lib/bootstrap/css/bootstrap.min.css',
 	'app/lib/jquery/jquery.min.js',
 	'app/css/style.css',
-	'service-worker.js'
-
-
+	'service-worker.js',
+	'manifest.json'
 ];
 
 self.addEventListener('install', function (e) {
