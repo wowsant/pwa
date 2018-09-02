@@ -1,7 +1,7 @@
 *  { margin:0; padding:0; }
 
 html, body { height: 100%;  }
-header { padding-bottom: 70px !important }
+header { padding-bottom: 70px !important; margin-bottom: 5px;}
 .cabecalho { background-color: #FFFFFF; position:fixed; z-index: 2;  }
 .container-fluid {z-index: 1;}
 .menu-fixo { 
@@ -37,5 +37,6 @@ a:active    { color: black }*/
 .ico-roxo     { color: #8e44ad !important; }
 .ico-azul     { color: #2980b9 !important; }
 
-.logo { height: 70px; }
+.logo_pwa { max-height: 70px; margin-top: 2px}
+.logo_unibh { max-height: 40px; margin-top: 10px}
 

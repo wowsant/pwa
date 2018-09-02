@@ -30,40 +30,101 @@
 
     <body>
         <header>
-            <div class="col-xs-12 cabecalho" align="center">
-                <a href="/index.html"><img src="imagens/logo_principal.png" class="logo"></a>
+            <div class="col-xs-12 cabecalho">
+                <div class="col-xs-6" align="left">
+                    <a href="/index.html"><img src="imagens/logo_principal.png" class="logo_pwa"></a>
+                </div>
+                <div class="col-xs-6" align="right">
+                    <a href="/index.html"><img src="imagens/unibh.png" class="logo_unibh"></a>
+                </div>
             </div>
         </header>
 
+
+
+
 		<div class="container">
-			<div class="jumbotron">
-				<h1>Hello World!</h1>
-				<p>Look over here!</p>
-			</div>
-		</div>
-		<video id="player" controls autoplay></video>
-		<button id="capture">Capture</button>
-		<canvas id="snapshot" width=320 height=240></canvas>
-		<script>
-            var player = document.getElementById('player');
-            var snapshotCanvas = document.getElementById('snapshot');
-            var captureButton = document.getElementById('capture');
+            <div class="jumbotron">
+                <h1>Bem vindo!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolorem fugit harum hic, illo ipsam laboriosam quas repellat ullam voluptate! A aut dolores dolorum, explicabo in minima modi suscipit voluptatum. </p>
+            </div>
+        </div>
 
-            var handleSuccess = function(stream) {
-                // Attach the video stream to the video element and autoplay.
-                player.srcObject = stream;
-            };
 
-            captureButton.addEventListener('click', function() {
-                var context = snapshot.getContext('2d');
-                // Draw the video frame to the canvas.
-                context.drawImage(player, 0, 0, snapshotCanvas.width,
-                    snapshotCanvas.height);
-            });
 
-            navigator.mediaDevices.getUserMedia({video: true})
-                .then(handleSuccess);
-		</script>
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Hello World!</h1>
+                <p>Look over here!</p>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Hello World!</h1>
+                <p>Look over here!</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Hello World!</h1>
+                <p>Look over here!</p>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Hello World!</h1>
+                <p>Look over here!</p>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Hello World!</h1>
+                <p>Look over here!</p>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Hello World!</h1>
+                <p>Look over here!</p>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Hello World!</h1>
+                <p>Look over here!</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
 		<div class="menu-fixo">
     		<div class="row" align="center">
 		        <div class="col-xs-1"></div>
