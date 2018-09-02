@@ -8,6 +8,7 @@ let filesToCache = [
 	'lib/bootstrap/css/bootstrap.min.css',
 	'lib/jquery/jquery.min.js',
 	'css/style.css',
+	'views/camera.html',
 	'service-worker.js'
 ];
 
