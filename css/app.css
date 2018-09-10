@@ -1,6 +1,6 @@
 *  { margin:0; padding:0; }
 
-html, body { height: 100%;  }
+html, body { height: 100%; }
 header { padding-bottom: 70px !important; margin-bottom: 5px;}
 .cabecalho { background-color: #FFFFFF; position:fixed; z-index: 2;  }
 .container-fluid {z-index: 1;}
@@ -31,11 +31,13 @@ a:active    { color: black }*/
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-38 { font-size: 38px; }
 .material-icons.md-48 { font-size: 48px; }
+
 .ico-verde    { color: #27ae60 !important; }
 .ico-vermelho { color: #e74c3c !important; }
 .ico-amarelo  { color: #f1c40f !important; }
 .ico-roxo     { color: #8e44ad !important; }
 .ico-azul     { color: #2980b9 !important; }
+.ico-preto    { color: #000000 !important; }
 
 .logo_pwa { max-height: 70px; margin-top: 2px}
 .logo_unibh { max-height: 40px; margin-top: 15px}
@@ -80,3 +82,9 @@ a:active    { color: black }*/
     line-height: 1.42;
     border-radius: 15px;
 }
+
+.a { background-color: #27ae60 !important; padding: 0 !important;}
+.b { background-color: #e74c3c !important; padding: 0 !important;}
+.c { background-color: #f1c40f !important; padding: 0 !important;}
+.d { background-color: #8e44ad !important; padding: 0 !important;}
+.e { background-color: #2980b9 !important; padding: 0 !important;}
