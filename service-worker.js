@@ -1,14 +1,18 @@
-let cacheName = 'tcc_pwa_v1';
+let cacheName = 'tcc_pwa_v2';
 let filesToCache = [
 	'./',
 	'index.html',
-	'css/app.css',
-	'js/main.js',
-	'css/app.css',
-	'lib/bootstrap/css/bootstrap.min.css',
-	'lib/jquery/jquery.min.js',
-	'css/app.css',
-	'views/camera.html',
+    'assets/css/main.css',
+    'assets/css/font-awesome.min.css',
+    'assets/css/noscript.css',
+    'assets/js/breakpoints.min.js',
+    'assets/js/browser.min.js',
+    'assets/js/jquery.min.js',
+    'assets/js/jquery.scrollex.min.js',
+    'assets/js/jquery.scrolly.min.js',
+    'assets/js/main.js',
+    'register.js',
+	'assets/js/util.js',
 	'service-worker.js'
 ];
 

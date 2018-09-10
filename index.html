@@ -1,126 +1,196 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-	<base href="/pwa/">
-	<title>TCC Progressive Web App</title>
-    <meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- Icons -->
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="apple-touch-icon" sizes="180x180" href="imagens/icons/apple-touch-icon.png">
-    <link rel="shortcut icon" href="imagens/icons/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="imagens/icons/favicon.ico" type="image/x-icon">
-    <!-- Bootstrap -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- WebManifest -->
-    <link rel="manifest" href="manifest.json">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/app.css">
-    <!-- Font Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<head>
+	<!-- 	<base href="/pwa/"> -->
+		<title>TCC Progressive Web App</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	    <!-- Icons -->
+	    <meta name="msapplication-TileColor" content="#ffffff">
+	    <meta name="theme-color" content="#ffffff">
+	    <link rel="apple-touch-icon" sizes="180x180" href="imagens/icons/apple-touch-icon.png">
+	    <link rel="shortcut icon" href="imagens/icons/favicon.ico" type="image/x-icon">
+	    <link rel="icon" href="imagens/icons/favicon.ico" type="image/x-icon">
 
-    <script src="js/main.js"></script>
+	    <!-- WebManifest -->
+    	<link rel="manifest" href="manifest.json">
+		<!-- Js personalizado -->
+		<script src="register.js"></script>
 
-    <body>
-        <header>
-            <div class="col-xs-12 cabecalho">
-                <div class="col-xs-6" align="left">
-                    <a href="#"><img src="imagens/logo_principal.png" class="logo_pwa"></a>
-                </div>
-                <div class="col-xs-6" align="right">
-                    <a href="#"><img src="imagens/unibh.png" class="logo_unibh"></a>
-                </div>
-            </div>
-        </header>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<section id="sidebar">
+			<div class="inner">
+				<nav>
+					<ul>
+						<li><a href="#bloco1">Home</a></li>
+						<li><a href="#bloco2">Service Worker</a></li>
+						<li><a href="#bloco3">Câmera</a></li>
+						<li><a href="#bloco4">Microfone</a></li>
+						<li><a href="#bloco5">Notificações</a></li>
+						<li><a href="#bloco6">Localização</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
 
-        <div class="container">
-            <div class="jumbotron text-justify">
-                <h1>
-                    <span class="cor-verde">B</span>
-                    <span class="cor-vermelho">e</span>
-                    <span class="cor-amarelo">m</span>
+		<div id="wrapper">
+			<section id="bloco1" class="wrapper style1 fullscreen fade-up">
+				<div class="inner">
+					<h1>PWA</h1>
+					<p>Esta aplicação foi desenvolvida com o intuito de expor as principais funcionalidades e conceitos da metodoligia de aplicações <i>web</i> progressivas (PWA). </p>
+					<p>Criamos um documento com mais informações sobre PWA, é possivel conferir no link abaixo.</p>
+					<ul class="actions">
+						<li><a href="#" class="button">Mais informações</a></li>
+					</ul>
+				</div>
+			</section>
 
-                    <span class="cor-roxo">v</span>
-                    <span class="cor-azul">i</span>
-                    <span class="cor-verde">n</span>
-                    <span class="cor-vermelho">d</span>
-                    <span class="cor-amarelo">o</span>
-                    <span class="cor-roxo">!</span>
-                </h1>
-                <p>Trabalho a ser apresentada ao Centro Universitário de Belo Horizonte como requisito parcial à obtenção do título de Bacharel em Sistemas de Informação.</p>
+			<section id="bloco2" class="wrapper style2 spotlights">
+				<div class="inner">
+					<h2>Service Worker</h2>
+					<p>O service worker é responsavel por trazer mais poder as aplicações <i>web</i>, os recursos dispinibilizados bem aplicados trazem uma experiencia mais proximo do nativo. </p>
+					<ul class="actions">
+						<li><a href="#" class="button">Mais informações</a></li>
+					</ul>
+				</div>
+			</section>
 
-                <!-- Botão para disparar modal-->
-                <button type="button" class="btn btn-info btn-circle btn-lg" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-plus"></i></button>
+			<section id="bloco3" class="wrapper style3 spotlights">
+				<div class="inner">
+					<h2>Câmera</h2>
+					<p>Um recurso disponivel em grande parte dos dispositivos, com aplicações <i>web</i> você consegue acessar normalmente. </p>
+					<ul class="actions">
+						<li><a href="#" class="button">Mais informações</a></li>
+					</ul>
+				</div>
+			</section>
 
-                <!-- Modal mais informações -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger btn-circle btn-lg" data-dismiss="modal"><i class="glyphicon glyphicon-remove"></i></button>
+			<!-- Caractetisticas -->
+			<section id="bloco2" class="wrapper style1 fade-up">
+				<div class="inner">
+					<h2>Um Progressive Web App é:</h2>
+					<p>Características de uma aplicação web progressiva</p>
+					<div class="features">
+						<section>
+							<span class="icon major fa-code"></span>
+							<h3>Progressivo</h3>
+							<p>Para qualquer usuário, independentemente do browser.</p>
+						</section>
+						<section>
+							<span class="icon major fa-lock"></span>
+							<h3>Responsivo</h3>
+							<p>Feito para qualquer dispositivo: desktop, tablet e mobile.</p>
+						</section>
+						<section>
+							<span class="icon major fa-wifi"></span>
+							<h3>Conexão</h3>
+							<p>Funciona mesmo se o usuário estiver offline.</p>
+						</section>
+						<section>
+							<span class="icon major fa-desktop"></span>
+							<h3>App-like:</h3>
+							<p>não é necessário baixar atualizações do aplicativo, o browser simplesmente irá detectar e atualizar automaticamente, caso necessário;</p>
+						</section>
+						<section>
+							<span class="icon major fa-chain"></span>
+							<h3>Seguro</h3>
+							<p>Somente com https.</p>
+						</section>
+						<section>
+							<span class="icon major fa-diamond"></span>
+							<h3>Engajável</h3>
+							<p>Através de push notifications, o usuário pode ser constantemente engajado.</p>
+						</section>
+						<section>
+							<span class="icon major fa-diamond"></span>
+							<h3>Instalável</h3>
+							<p>é possível adicionar um ícone na tela principal do smartphone com apenas um clique.</p>
+						</section>
+					</div>
+					<ul class="actions">
+						<li><a href="generic.html" class="button">Mais informações</a></li>
+					</ul>
+				</div>
+			</section>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="panel panel-info">
-                <div class="panel-heading">Lorem</div>
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda est ipsa nisi perspiciatis? A aliquam beatae blanditiis, consectetur debitis dicta dolore dolorem et, ipsam ipsum perferendis reprehenderit rerum temporibus velit.</div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="panel panel-danger">
-                <div class="panel-heading">Lorem</div>
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda est ipsa nisi perspiciatis? A aliquam beatae blanditiis, consectetur debitis dicta dolore dolorem et, ipsam ipsum perferendis reprehenderit rerum temporibus velit.</div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="panel panel-warning">
-                <div class="panel-heading">Lorem</div>
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda est ipsa nisi perspiciatis? A aliquam beatae blanditiis, consectetur debitis dicta dolore dolorem et, ipsam ipsum perferendis reprehenderit rerum temporibus velit.</div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="panel panel-primary">
-                <div class="panel-heading">Lorem</div>
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda est ipsa nisi perspiciatis? A aliquam beatae blanditiis, consectetur debitis dicta dolore dolorem et, ipsam ipsum perferendis reprehenderit rerum temporibus velit.</div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="panel panel-default">
-                <div class="panel-heading">Lorem</div>
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda est ipsa nisi perspiciatis? A aliquam beatae blanditiis, consectetur debitis dicta dolore dolorem et, ipsam ipsum perferendis reprehenderit rerum temporibus velit.</div>
-            </div>
-        </div>
-
-		<div class="menu-fixo">
-    		<div class="row" align="center">
-		        <div class="col-xs-1"></div>
-		        <div class="col-xs-2"><a href="views/camera.html">       <i class="material-icons md-38 ico-verde"     title="Câmera">camera_enhance</i></a></div>
-		        <div class="col-xs-2"><a href="views/microfone.html">    <i class="material-icons md-38 ico-vermelho"  title="Microfone">mic</i></a></div>
-		        <div class="col-xs-2"><a href="views/plus.html">         <i class="material-icons md-38 ico-amarelo"   title="Mais">add</i></a></div>
-		        <div class="col-xs-2"><a href="views/notificacao.html">  <i class="material-icons md-38 ico-roxo"      title="Notificações">announcement</i></a></div>
-		        <div class="col-xs-2"><a href="views/localizacao.html">  <i class="material-icons md-38 ico-azul"      title="Localização">my_location</i></a></div>
-    		</div> 
+			<section id="bloco3" class="wrapper style1 fade-up">
+				<div class="inner">
+					<h2>Get in touch</h2>
+					<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+					<div class="split style1">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="5"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><a href="" class="button submit">Send Message</a></li>
+								</ul>
+							</form>
+						</section>
+						<section>
+							<ul class="contact">
+								<li>
+									<h3>Address</h3>
+									<span>12345 Somewhere Road #654<br />
+									Nashville, TN 00000-0000<br />
+									USA</span>
+								</li>
+								<li>
+									<h3>Email</h3>
+									<a href="#">user@untitled.tld</a>
+								</li>
+								<li>
+									<h3>Phone</h3>
+									<span>(000) 000-0000</span>
+								</li>
+								<li>
+									<h3>Social</h3>
+									<ul class="icons">
+										<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</section>
 		</div>
 
-		<!-- jQuery -->
-		<script src="lib/jquery/jquery.min.js"></script>
-		<!-- JS -->
-		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-		<!-- JS Personalizado -->
-		<!-- <script src="js/contoller.js"></script> --> 
+		<!-- Footer -->
+		<footer id="footer" class="wrapper style1-alt">
+			<div class="inner">
+				<ul class="menu">
+					<li></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
