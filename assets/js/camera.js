@@ -7,11 +7,7 @@ function getUserMedia(options, successCallback, failureCallback) {
 }
 
 function getStream (type) {
-    if (!navigator.getUserMedia && !navigator.webkitGetUserMedia &&
-        !navigator.mozGetUserMedia && !navigator.msGetUserMedia) {
-        alert('User Media API not supported.');
-        return;
-    }
+
 
     var constraints = {};
     constraints[type] = true;
