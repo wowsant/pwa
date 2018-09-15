@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <base href="/pwa/">
+    <title>TCC Progressive Web App</title>
+    <!-- WebManifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Icons -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/icons/apple-touch-icon.png">
+    <link rel="shortcut icon" href="imagens/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="imagens/icons/favicon.ico" type="image/x-icon">
+    <!-- Js personalizado -->
+    <script src="register.js"></script>
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+    <div class="container" style="margin-top: 10px">
+        <div class="row">
+            <div class="col-sm-6">
+                <p><button type="button" class="btn btn-lg btn-default" onclick="getStream('video')">Grab video</button></p>
+
+                <video controls autoplay style="height:180px; width: 240px;"></video>
+            </div>
+            <div class="col-sm-6">
+                <p><button type="button" class="btn btn-lg btn-default" onclick="getStream('audio')">Grab audio</button></p>
+
+                <audio controls autoplay></audio>
+            </div>
+        </div>
+    </div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+    <script src="assets/js/camera.js"></script>
+</body>
+</html>
